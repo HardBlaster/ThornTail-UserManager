@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img src="../../../assets/img/location.png"
+         class="img-responsive"
+         alt="location"
+         style="max-height: 300px;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div
+      class="btn-group"
+      appDropdown #r="appDropdown">
+      <button type="button"
+              class="btn btn-primary dropdown-toggle"
+              data-toggle="dropdown">
+        Manage Address
+        <span class="caret"></span>
+      </button>
+
+      <ul class="dropdown-menu"
+          [ngClass]="{'show':r.isOpen}">
+        <li><a
+          class="btn"
+          style="cursor: pointer"
+          (click)="onEdit()">Edit Address</a></li>
+        <li><a
+          class="btn"
+          style="cursor: pointer"
+          (click)="onDelete()">Delete Address</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ selectedAddress.street }} {{ selectedAddress.house }}</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    {{ selectedAddress.postalCode }} {{ selectedAddress.city }}
+  </div>
+</div>

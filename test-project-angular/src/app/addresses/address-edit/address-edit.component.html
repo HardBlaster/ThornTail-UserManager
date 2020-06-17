@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-xs-12">
+          <button
+            class="btn btn-success"
+            (click)="onSave()">Save</button>
+          <button
+            class="btn btn-danger"
+            (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="postalCode">Postal code:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="postalCode"
+              [(ngModel)]="address.postalCode"
+              [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              [(ngModel)]="address.city"
+              [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="street">Street:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="street"
+              [(ngModel)]="address.street"
+              [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="house">House:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="house"
+              [(ngModel)]="address.house"
+              [ngModelOptions]="{standalone: true}">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

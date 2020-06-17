@@ -1,0 +1,15 @@
+<a class="list-group-item clearfix"
+   (click)="onSelected()">
+
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ address.street }} {{ address.house }}</h4>
+    <p class="list-group-item-text">{{ address.postalCode }} {{ address.city }}</p>
+  </div>
+
+  <span class="pull-right">
+        <img src="assets/img/location.png"
+             class="img-responsive"
+             alt="location"
+             style="max-height: 50px;">
+      </span>
+</a>

@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewAddress()">New Address</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <app-address-item
+      *ngFor="let a of addresses"
+      [address]="a"></app-address-item>
+  </div>
+</div>
